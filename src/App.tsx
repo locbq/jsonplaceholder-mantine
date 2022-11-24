@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { routes } from "@router/router.routes";
 import { AppLayout } from "./layouts";
+import { NotFoundPage } from "@pages";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
             <Route path={route.path} element={route.element} key={route.path} />
           ))}
         </Route>
+
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
