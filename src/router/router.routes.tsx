@@ -2,6 +2,8 @@ import paths from "./router.paths";
 import {
   DashboardPage,
   UserPage,
+  UserCreatePage,
+  UserEditPage,
   PostPage,
   CommentPage,
   AlbumPage,
@@ -18,6 +20,16 @@ export const routes = [
     title: "User",
     path: paths.PATH_USER,
     element: <UserPage />
+  },
+  {
+    title: "User Create",
+    path: paths.PATH_USER_CREATE,
+    element: <UserCreatePage />
+  },
+  {
+    title: "User Edit",
+    path: paths.PATH_USER_EDIT,
+    element: <UserEditPage />
   },
   {
     title: "Post",

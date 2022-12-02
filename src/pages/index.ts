@@ -4,6 +4,12 @@ export const DashboardPage = loadable(
   async () => await import("./dashboard-page")
 );
 export const UserPage = loadable(async () => await import("./user-page"));
+export const UserCreatePage = loadable(
+  async () => await import("./user-create-page")
+);
+export const UserEditPage = loadable(
+  async () => await import("./user-edit-page")
+);
 export const PostPage = loadable(async () => await import("./post-page"));
 export const CommentPage = loadable(async () => await import("./comment-page"));
 export const AlbumPage = loadable(async () => await import("./album-page"));

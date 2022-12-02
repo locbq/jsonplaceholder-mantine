@@ -12,9 +12,7 @@ export default function AppLayout() {
         navbar={<Sidebar />}
         header={<Header />}
       >
-        <main>
-          <Outlet />
-        </main>
+        <Outlet />
       </AppShell>
     </>
   );
