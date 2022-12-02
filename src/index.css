@@ -1,3 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  margin: 0;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.active-link button {
+  background-color: #4dabf7;
+  color: #ffffff;
+  font-weight: 600;
+}

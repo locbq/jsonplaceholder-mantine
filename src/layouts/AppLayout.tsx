@@ -1,11 +1,21 @@
 import { Outlet } from "react-router-dom";
+import { AppShell } from "@mantine/core";
+
+import { Sidebar, Header } from "@components";
 
 export default function AppLayout() {
   return (
     <>
-      <main>
-        <Outlet />
-      </main>
+      <AppShell
+        padding="md"
+        layout="alt"
+        navbar={<Sidebar />}
+        header={<Header />}
+      >
+        <main>
+          <Outlet />
+        </main>
+      </AppShell>
     </>
   );
 }
